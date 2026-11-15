@@ -65,14 +65,14 @@ def main():
     repeat = "да"
 
     while repeat == "да":
-        groupName = input("\nВведите название группы: ")
+        groupName = input("\n\n\n\n\nВведите название группы: ")
         total = getPositiveInteger("Введите общую численность группы: ")
         present = getAttendance(total)
 
         printReport(groupName, total, present)
 
         repeat = input(
-            "\nРассчитать посещаемость другого занятия? (да/нет): "
+            "\n\n\n\n\nРассчитать посещаемость другого занятия? (да/нет): "
         ).strip().lower()
 
         while repeat != "да" and repeat != "нет":
